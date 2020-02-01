@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 
 const useAppState = () => {
-  const [mode, setMode] = useState(false);
-  return {mode, setMode};
+  const [letters, setLetters] = useState(false);
+  return {letters, setLetters};
 };
 
 export default useAppState;

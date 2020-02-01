@@ -7,35 +7,17 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
-import {
-  Header,
-  LearnMoreLinks,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {SafeAreaView, ScrollView, View, Text, StatusBar} from 'react-native';
+import {Header, ReloadInstructions} from 'react-native/Libraries/NewAppScreen';
 import styles from './styles/styles';
-import {
-  Section,
-  NumberLetterSwitch,
-} from './components';
+import {Section, NumberLetterSwitch, ChordButton} from './components';
+import useAppState from './state/AppState';
 
 const App: () => React$Node = () => {
-  const stepOne = {
-    title: 'Step One',
-    description: (
-      <Text>
-        Edit <Text style={styles.highlight}>App.js </Text>
-        to change this screen and then come back to see your edits.
-      </Text>
-    ),
-  };
+  const {letters, setLetters} = useAppState();
+  const updateLetters = value => {
+    setLetters(value);
+  }
   const steps = [
     {
       title: 'Step One',
@@ -66,25 +48,17 @@ const App: () => React$Node = () => {
             </View>
           )}
           <View style={styles.body}>
-            <NumberLetterSwitch />
+            <ChordButton letters={letters} />
+            <NumberLetterSwitch letters={letters} onValueChange={updateLetters} />
             {steps.map((step, index) => {
               return (
-                <Section title={step.title} description={step.description} key={index} />
+                <Section
+                  title={step.title}
+                  description={step.description}
+                  key={index}
+                />
               );
             })}
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
           </View>
         </ScrollView>
       </SafeAreaView>
