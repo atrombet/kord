@@ -1,28 +1,18 @@
 import React from 'react';
-import {View, Button, StyleSheet} from 'react-native';
+import {View, Button} from 'react-native';
 import Sound from 'react-native-sound';
+import styles from '../styles/styles';
 
-const ChordButton = ({letters}) => {
+const ChordButton = ({numbers}) => {
   const chord = new Sound('c.mp3', Sound.MAIN_BUNDLE);
   const playChord = () => {
     chord.play();
   };
   return (
     <View style={styles.chordButton}>
-      <Button title={letters ? 'C' : '1'} onPress={playChord} />
+      <Button title={numbers ? '1' : 'C'} onPress={playChord} />
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  chordButton: {
-    height: 40,
-    width: 40,
-    borderRadius: 20,
-    borderWidth: 1,
-    borderColor: '#333333',
-    textAlign: 'center',
-  },
-});
 
 export default ChordButton;
