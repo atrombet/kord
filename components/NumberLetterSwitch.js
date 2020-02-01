@@ -1,16 +1,11 @@
 import React from 'react';
 import {View, Switch, Text, StyleSheet} from 'react-native';
-import useAppState from '../state/AppState';
 
-const NumberLetterSwitch = () => {
-  const {mode, setMode} = useAppState();
-  const updateMode = value => {
-    setMode(value);
-  };
+const NumberLetterSwitch = ({letters, onValueChange}) => {
   return (
     <View style={styles.nlSwitch}>
-      <Switch value={mode} onValueChange={updateMode} />
-      <Text>{mode ? 'Letters' : 'Numbers'}</Text>
+      <Switch value={letters} onValueChange={onValueChange} />
+      <Text>{letters ? 'Letters' : 'Numbers'}</Text>
     </View>
   );
 };
