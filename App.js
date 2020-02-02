@@ -1,66 +1,56 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
+ * Kord Music App
+ * https://github.com/atrombet/kord
  *
  * @format
  * @flow
  */
 
 import React from 'react';
-import {SafeAreaView, ScrollView, View, Text, StatusBar} from 'react-native';
-import {Header, ReloadInstructions} from 'react-native/Libraries/NewAppScreen';
+import {SafeAreaView, StatusBar} from 'react-native';
 import styles from './styles/styles';
-import {Section, NumberLetterSwitch, ChordButton} from './components';
+import {ChordButton, KeyPicker, NumberNameSwitch} from './components';
 import useAppState from './state/AppState';
+import {KEY_MAP} from './constants';
 
 const App: () => React$Node = () => {
-  const {letters, setLetters} = useAppState();
-  const updateLetters = value => {
-    setLetters(value);
-  }
-  const steps = [
-    {
-      title: 'Step One',
-      description: (
-        <Text>
-          Edit <Text style={styles.highlight}>App.js </Text>
-          to change this screen and then come back to see your edits.
-        </Text>
-      ),
-    },
-    {
-      title: 'See Your Changes',
-      description: <ReloadInstructions />,
-    },
-  ];
+  // Setup state
+  const {
+    numbers,
+    setNumbers,
+    selectedKey,
+    setSelectedKey,
+    pickerVisible,
+    setPickerVisible,
+  } = useAppState();
 
+  const keys = Array.from(KEY_MAP.values());
+
+  // Define functions that update state
+  const updateNumbers = value => {
+    setNumbers(value);
+  };
+  const updateKey = value => {
+    setPickerVisible(false);
+    setSelectedKey(KEY_MAP.get(value));
+  };
+  const showPicker = () => {
+    setPickerVisible(true);
+  };
+  // View
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <ChordButton letters={letters} />
-            <NumberLetterSwitch letters={letters} onValueChange={updateLetters} />
-            {steps.map((step, index) => {
-              return (
-                <Section
-                  title={step.title}
-                  description={step.description}
-                  key={index}
-                />
-              );
-            })}
-          </View>
-        </ScrollView>
+      <SafeAreaView style={styles.container}>
+        <ChordButton numbers={numbers} />
+        <NumberNameSwitch numbers={numbers} onValueChange={updateNumbers} />
+        <KeyPicker
+          selectedKey={selectedKey}
+          keys={keys}
+          pickerVisible={pickerVisible}
+          showPicker={showPicker}
+          onValueChange={updateKey}
+        />
       </SafeAreaView>
     </>
   );
