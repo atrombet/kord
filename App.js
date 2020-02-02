@@ -9,7 +9,7 @@
 import React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
 import styles from './styles/styles';
-import {ChordButton, KeyPicker, NumberNameSwitch} from './components';
+import {ChordLayout, KeyPicker, NumberNameSwitch} from './components';
 import useAppState from './state/AppState';
 import {KEY_MAP} from './constants';
 
@@ -23,7 +23,7 @@ const App: () => React$Node = () => {
     pickerVisible,
     setPickerVisible,
   } = useAppState();
-
+  // Create array of key values to populate picker.
   const keys = Array.from(KEY_MAP.values());
 
   // Define functions that update state
@@ -37,12 +37,13 @@ const App: () => React$Node = () => {
   const showPicker = () => {
     setPickerVisible(true);
   };
+
   // View
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.container}>
-        <ChordButton numbers={numbers} />
+        <ChordLayout selectedKey={selectedKey} numbers={numbers} />
         <NumberNameSwitch numbers={numbers} onValueChange={updateNumbers} />
         <KeyPicker
           selectedKey={selectedKey}
