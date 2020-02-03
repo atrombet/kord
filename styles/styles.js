@@ -8,13 +8,20 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
-  chordButton: {
-    height: 40,
-    width: 40,
-    borderRadius: 20,
+  chordButtonContainer: {
+    height: 50,
+    width: 50,
+    borderRadius: 25,
     borderWidth: 1,
     borderColor: '#333333',
+  },
+  chordButton: {
+    height: 48,
+    width: 48,
+    fontSize: 18,
     textAlign: 'center',
+    paddingVertical: 15,
+    lineHeight: 18,
   },
   numberNameSwitch: {
     justifyContent: 'center',

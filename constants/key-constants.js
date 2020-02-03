@@ -17,10 +17,20 @@ export const KEY_MAP = new Map([
     },
   ],
   [
-    'c#',
+    'cs',
     {
-      id: 'c#',
+      id: 'cs',
       display: 'C#',
+      chords: {
+        one: 'cs',
+        two: 'dsm',
+        three: 'fm',
+        one_three: 'cs_f',
+        four: 'fs',
+        five: 'gs',
+        six: 'asm',
+        five_seven: 'gs_c',
+      },
     },
   ],
   [
@@ -28,13 +38,33 @@ export const KEY_MAP = new Map([
     {
       id: 'd',
       display: 'D',
+      chords: {
+        one: 'd',
+        two: 'em',
+        three: 'fsm',
+        one_three: 'd_fs',
+        four: 'g',
+        five: 'a',
+        six: 'bm',
+        five_seven: 'a_cs',
+      },
     },
   ],
   [
-    'd#',
+    'ds',
     {
-      id: 'd#',
+      id: 'ds',
       display: 'D#',
+      chords: {
+        one: 'ds',
+        two: 'fm',
+        three: 'gm',
+        one_three: 'ds_g',
+        four: 'gs',
+        five: 'as',
+        six: 'cm',
+        five_seven: 'as_d',
+      },
     },
   ],
   [
@@ -42,6 +72,16 @@ export const KEY_MAP = new Map([
     {
       id: 'e',
       display: 'E',
+      chords: {
+        one: 'e',
+        two: 'fsm',
+        three: 'gsm',
+        one_three: 'e_gs',
+        four: 'a',
+        five: 'b',
+        six: 'csm',
+        five_seven: 'b_ds',
+      },
     },
   ],
   [
@@ -49,13 +89,33 @@ export const KEY_MAP = new Map([
     {
       id: 'f',
       display: 'F',
+      chords: {
+        one: 'f',
+        two: 'gm',
+        three: 'am',
+        one_three: 'f_a',
+        four: 'as',
+        five: 'c',
+        six: 'dm',
+        five_seven: 'c_e',
+      },
     },
   ],
   [
-    'f#',
+    'fs',
     {
-      id: 'f#',
+      id: 'fs',
       display: 'F#',
+      chords: {
+        one: 'fs',
+        two: 'gsm',
+        three: 'asm',
+        one_three: 'fs_as',
+        four: 'b',
+        five: 'cs',
+        six: 'dsm',
+        five_seven: 'cs_f',
+      },
     },
   ],
   [
@@ -63,13 +123,33 @@ export const KEY_MAP = new Map([
     {
       id: 'g',
       display: 'G',
+      chords: {
+        one: 'g',
+        two: 'am',
+        three: 'bm',
+        one_three: 'g_b',
+        four: 'c',
+        five: 'd',
+        six: 'em',
+        five_seven: 'd_fs',
+      },
     },
   ],
   [
-    'g#',
+    'gs',
     {
-      id: 'g#',
+      id: 'gs',
       display: 'G#',
+      chords: {
+        one: 'gs',
+        two: 'asm',
+        three: 'cm',
+        one_three: 'gs_c',
+        four: 'cs',
+        five: 'ds',
+        six: 'fm',
+        five_seven: 'ds_g',
+      },
     },
   ],
   [
@@ -77,13 +157,33 @@ export const KEY_MAP = new Map([
     {
       id: 'a',
       display: 'A',
+      chords: {
+        one: 'a',
+        two: 'bm',
+        three: 'csm',
+        one_three: 'a_cs',
+        four: 'd',
+        five: 'e',
+        six: 'fsm',
+        five_seven: 'e_gs',
+      },
     },
   ],
   [
-    'a#',
+    'as',
     {
-      id: 'a#',
+      id: 'as',
       display: 'A#',
+      chords: {
+        one: 'as',
+        two: 'cm',
+        three: 'dm',
+        one_three: 'as_d',
+        four: 'ds',
+        five: 'f',
+        six: 'gm',
+        five_seven: 'f_a',
+      },
     },
   ],
   [
@@ -91,6 +191,16 @@ export const KEY_MAP = new Map([
     {
       id: 'b',
       display: 'B',
+      chords: {
+        one: 'b',
+        two: 'csm',
+        three: 'dsm',
+        one_three: 'b_ds',
+        four: 'e',
+        five: 'fs',
+        six: 'gsm',
+        five_seven: 'fs_as',
+      },
     },
   ],
 ]);
