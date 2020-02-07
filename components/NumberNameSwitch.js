@@ -6,7 +6,7 @@ const NumberNameSwitch = ({numbers, onValueChange}) => {
   return (
     <View style={styles.numberNameSwitch}>
       <Switch value={numbers} onValueChange={onValueChange} />
-      <Text>{numbers ? 'Numbers' : 'Names'}</Text>
+      <Text style={styles.numberNameSwitchText}>{numbers ? 'Numbers' : 'Names'}</Text>
     </View>
   );
 };

@@ -15,6 +15,7 @@ const KeyPicker = ({
       {pickerVisible ? (
         <Picker
           style={styles.keyPicker}
+          itemStyle={{color: 'white'}}
           selectedValue={selectedKey.id}
           onValueChange={onValueChange}
           mode="dropdown">
