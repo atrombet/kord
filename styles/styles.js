@@ -1,4 +1,4 @@
-import {StyleSheet, Dimensions} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const styles = StyleSheet.create({
@@ -28,27 +28,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'rgba(0, 0, 0, 0.67)',
     zIndex: 1,
-  },
-  sideNav: {
-    flex: 1,
-    flexDirection: 'column',
-    position: 'absolute',
-    top: 0,
-    bottom: 0,
-    left: 0,
-    backgroundColor: '#333333',
-    width: Dimensions.get('window').width - 120,
-    zIndex: 2,
-    paddingTop: 80,
-    paddingLeft: 32,
-  },
-  sideNavItem: {
-    marginTop: 16,
-    marginBottom: 16,
-  },
-  sideNavItemText: {
-    color: Colors.white,
-    fontSize: 21,
   },
   chordGrid: {
     alignItems: 'center',
@@ -120,11 +99,14 @@ const styles = StyleSheet.create({
     color: Colors.white,
   },
   numberNameSwitch: {
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
   },
   numberNameSwitchText: {
     color: Colors.white,
+    padding: 16,
+    width: 100,
   },
   keyPickerContainer: {
     height: 216,
