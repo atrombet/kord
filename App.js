@@ -9,7 +9,12 @@
 import React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
 import styles from './styles/styles';
-import {ChordLayout, KeyPicker, NumberNameSwitch} from './components';
+import {
+  ChordLayout,
+  KeyPicker,
+  NumberNameSwitch,
+  HeaderBar,
+} from './components';
 import useAppState from './state/AppState';
 import {KEY_MAP} from './constants';
 
@@ -41,8 +46,9 @@ const App: () => React$Node = () => {
   // View
   return (
     <>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="light-content" />
       <SafeAreaView style={styles.container}>
+        <HeaderBar />
         <ChordLayout selectedKey={selectedKey} numbers={numbers} />
         <NumberNameSwitch numbers={numbers} onValueChange={updateNumbers} />
         <KeyPicker
