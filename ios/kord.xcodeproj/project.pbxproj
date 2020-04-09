@@ -54,7 +54,6 @@
 		C802818323E8502000E7B0E8 /* gsm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C802815F23E8502000E7B0E8 /* gsm.mp3 */; };
 		C802818423E8502000E7B0E8 /* cs_f.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C802816023E8502000E7B0E8 /* cs_f.mp3 */; };
 		C802818523E8502000E7B0E8 /* fs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C802816123E8502000E7B0E8 /* fs.mp3 */; };
-		C8707DA2243EBF1D00DACA8C /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8707DA1243EBF1D00DACA8C /* MaterialIcons.ttf */; };
 		D4497718B1F8BAFCD4A371B5 /* libPods-kord-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74FE3BECF8EB19EF43CBD2 /* libPods-kord-tvOSTests.a */; };
 		EE6449D43E9D6ACE779B17A9 /* libPods-kord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BFB3A6C72E6BCBC1278F65 /* libPods-kord.a */; };
 /* End PBXBuildFile section */
@@ -473,7 +472,6 @@
 				C802817D23E8502000E7B0E8 /* am.mp3 in Resources */,
 				C802817823E8502000E7B0E8 /* a.mp3 in Resources */,
 				C802816623E8502000E7B0E8 /* as.mp3 in Resources */,
-				C8707DA2243EBF1D00DACA8C /* MaterialIcons.ttf in Resources */,
 				C802816423E8502000E7B0E8 /* ds_g.mp3 in Resources */,
 				C802816E23E8502000E7B0E8 /* em.mp3 in Resources */,
 				C802816523E8502000E7B0E8 /* a_cs.mp3 in Resources */,
@@ -571,6 +569,7 @@
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
@@ -589,6 +588,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",

@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
+import {SafeAreaView, StatusBar, Text} from 'react-native';
 import styles from './styles/styles';
 import {
   ChordLayout,
@@ -17,6 +17,7 @@ import {
 } from './components';
 import useAppState from './state/AppState';
 import {KEY_MAP} from './constants';
+import LinearGradient from 'react-native-linear-gradient';
 
 const App: () => React$Node = () => {
   // Setup state
@@ -45,7 +46,12 @@ const App: () => React$Node = () => {
 
   // View
   return (
-    <>
+    <LinearGradient
+      useAngle={true}
+      angle={45}
+      angleCenter={{x: 0.5, y: 0.5}}
+      colors={['#072a62', '#0c4546']}
+      style={{height: '100%'}}>
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={styles.container}>
         <HeaderBar />
@@ -59,7 +65,7 @@ const App: () => React$Node = () => {
           onValueChange={updateKey}
         />
       </SafeAreaView>
-    </>
+    </LinearGradient>
   );
 };
 
