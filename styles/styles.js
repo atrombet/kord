@@ -2,12 +2,14 @@ import {StyleSheet} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const styles = StyleSheet.create({
+  gradient: {
+    ...StyleSheet.absoluteFill,
+  },
   container: {
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#333333',
   },
   headerBar: {
     width: '100%',
@@ -21,13 +23,6 @@ const styles = StyleSheet.create({
   headerText: {
     fontFamily: 'Avenir Next',
     fontSize: 32,
-  },
-  overlay: {
-    ...StyleSheet.absoluteFill,
-    position: 'absolute',
-    flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.67)',
-    zIndex: 1,
   },
   chordGrid: {
     alignItems: 'center',
