@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {TouchableOpacity, Text} from 'react-native';
 import styles from '../styles/styles';
 
 const ChordButton = ({numbers, chord, playSound, size}) => {
@@ -19,11 +19,9 @@ const ChordButton = ({numbers, chord, playSound, size}) => {
       break;
   }
   return (
-    <View style={containerStyle}>
-      <Text style={buttonStyle} onPress={playSound}>
-        {numbers ? chord.number : chord.display}
-      </Text>
-    </View>
+    <TouchableOpacity style={containerStyle} onPressIn={playSound}>
+      <Text style={buttonStyle}>{numbers ? chord.number : chord.display}</Text>
+    </TouchableOpacity>
   );
 };
 
