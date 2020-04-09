@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StatusBar, Text} from 'react-native';
+import {SafeAreaView, StatusBar} from 'react-native';
 import styles from './styles/styles';
 import {
   ChordLayout,
