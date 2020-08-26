@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* kordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* kordTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -54,6 +53,8 @@
 		C802818323E8502000E7B0E8 /* gsm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C802815F23E8502000E7B0E8 /* gsm.mp3 */; };
 		C802818423E8502000E7B0E8 /* cs_f.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C802816023E8502000E7B0E8 /* cs_f.mp3 */; };
 		C802818523E8502000E7B0E8 /* fs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C802816123E8502000E7B0E8 /* fs.mp3 */; };
+		C8AF8F5324F5F4E2002D806A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AF8F5224F5F4E2002D806A /* LaunchScreen.storyboard */; };
+		C8AF8F5724F5F79F002D806A /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = C8AF8F5624F5F79F002D806A /* launch.png */; };
 		D4497718B1F8BAFCD4A371B5 /* libPods-kord-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74FE3BECF8EB19EF43CBD2 /* libPods-kord-tvOSTests.a */; };
 		EE6449D43E9D6ACE779B17A9 /* libPods-kord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BFB3A6C72E6BCBC1278F65 /* libPods-kord.a */; };
 /* End PBXBuildFile section */
@@ -84,7 +85,6 @@
 		13B07F961A680F5B00A75B9A /* kord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = kord/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = kord/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = kord/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = kord/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = kord/main.m; sourceTree = "<group>"; };
@@ -136,6 +136,8 @@
 		C802816023E8502000E7B0E8 /* cs_f.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cs_f.mp3; path = ../../../Music/chords/cs_f.mp3; sourceTree = "<group>"; };
 		C802816123E8502000E7B0E8 /* fs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fs.mp3; path = ../../../Music/chords/fs.mp3; sourceTree = "<group>"; };
 		C8707DA1243EBF1D00DACA8C /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		C8AF8F5224F5F4E2002D806A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8AF8F5624F5F79F002D806A /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = "../../../Documents/Kairos/Internal Projects/Kord/GraphicDesign/KordOfficial/Source Files/launch.png"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		ED34FFA7970B94BB12F1785D /* Pods-kord-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kord-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-kord-tvOS/Pods-kord-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,7 +212,6 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = kord;
@@ -254,6 +255,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				C8AF8F5224F5F4E2002D806A /* LaunchScreen.storyboard */,
 				C8707DA1243EBF1D00DACA8C /* MaterialIcons.ttf */,
 				C802814123E8501F00E7B0E8 /* a_cs.mp3 */,
 				C802815423E8502000E7B0E8 /* a.mp3 */,
@@ -291,6 +293,7 @@
 				C802814B23E8501F00E7B0E8 /* gs_c.mp3 */,
 				C802813E23E8501E00E7B0E8 /* gs.mp3 */,
 				C802815F23E8502000E7B0E8 /* gsm.mp3 */,
+				C8AF8F5624F5F79F002D806A /* launch.png */,
 				13B07FAE1A68108700A75B9A /* kord */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* kordTests */,
@@ -403,12 +406,17 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 940;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = ABC94YPV7M;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = ABC94YPV7M;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -423,10 +431,9 @@
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "kord" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -471,6 +478,7 @@
 				C802817C23E8502000E7B0E8 /* f.mp3 in Resources */,
 				C802817D23E8502000E7B0E8 /* am.mp3 in Resources */,
 				C802817823E8502000E7B0E8 /* a.mp3 in Resources */,
+				C8AF8F5724F5F79F002D806A /* launch.png in Resources */,
 				C802816623E8502000E7B0E8 /* as.mp3 in Resources */,
 				C802816423E8502000E7B0E8 /* ds_g.mp3 in Resources */,
 				C802816E23E8502000E7B0E8 /* em.mp3 in Resources */,
@@ -488,11 +496,11 @@
 				C802816C23E8502000E7B0E8 /* as_d.mp3 in Resources */,
 				C802817723E8502000E7B0E8 /* g.mp3 in Resources */,
 				C802816A23E8502000E7B0E8 /* fsm.mp3 in Resources */,
+				C8AF8F5324F5F4E2002D806A /* LaunchScreen.storyboard in Resources */,
 				C802816823E8502000E7B0E8 /* ds.mp3 in Resources */,
 				C802817223E8502000E7B0E8 /* c.mp3 in Resources */,
 				C802817A23E8502000E7B0E8 /* c_e.mp3 in Resources */,
 				C802817023E8502000E7B0E8 /* bm.mp3 in Resources */,
-				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,24 +776,13 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13B07FB21A68108700A75B9A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			path = kord;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4CFC3B14050576BF07CCAC55 /* Pods-kordTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ABC94YPV7M;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -810,6 +807,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = ABC94YPV7M;
 				INFOPLIST_FILE = kordTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -829,8 +827,11 @@
 			baseConfigurationReference = 76B7BB3FF60AF52B1DB075EA /* Pods-kord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = ABC94YPV7M;
 				INFOPLIST_FILE = kord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -838,8 +839,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kairosconsolidated.nashvillenumbers;
 				PRODUCT_NAME = kord;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -849,7 +851,10 @@
 			baseConfigurationReference = 0B2B5DF84F9B335411BE9740 /* Pods-kord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABC94YPV7M;
 				INFOPLIST_FILE = kord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -857,8 +862,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kairosconsolidated.nashvillenumbers;
 				PRODUCT_NAME = kord;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -977,6 +983,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1020,6 +1027,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = "${inherited}";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1030,6 +1038,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1066,6 +1075,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = "${inherited}";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
