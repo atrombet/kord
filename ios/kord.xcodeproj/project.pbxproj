@@ -16,8 +16,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* kordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* kordTests.m */; };
-		3DAD1C30A6F32069BA905768 /* libPods-kordTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 368A3A96E9608BB3FA31BBFB /* libPods-kordTests.a */; };
-		41494D25E873D62F20DD4F85 /* libPods-kord-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D335D10FCDDB4AB24A80D0 /* libPods-kord-tvOS.a */; };
+		859F6439BD4D215C90397FA4 /* libPods-kord-kordTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDC5FDC029773F6F4C60C95 /* libPods-kord-kordTests.a */; };
 		C802816223E8502000E7B0E8 /* gs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C802813E23E8501E00E7B0E8 /* gs.mp3 */; };
 		C802816323E8502000E7B0E8 /* g_b.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C802813F23E8501F00E7B0E8 /* g_b.mp3 */; };
 		C802816423E8502000E7B0E8 /* ds_g.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C802814023E8501F00E7B0E8 /* ds_g.mp3 */; };
@@ -54,7 +53,6 @@
 		C802818323E8502000E7B0E8 /* gsm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C802815F23E8502000E7B0E8 /* gsm.mp3 */; };
 		C802818423E8502000E7B0E8 /* cs_f.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C802816023E8502000E7B0E8 /* cs_f.mp3 */; };
 		C802818523E8502000E7B0E8 /* fs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C802816123E8502000E7B0E8 /* fs.mp3 */; };
-		D4497718B1F8BAFCD4A371B5 /* libPods-kord-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74FE3BECF8EB19EF43CBD2 /* libPods-kord-tvOSTests.a */; };
 		EE6449D43E9D6ACE779B17A9 /* libPods-kord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BFB3A6C72E6BCBC1278F65 /* libPods-kord.a */; };
 /* End PBXBuildFile section */
 
@@ -88,17 +86,13 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = kord/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = kord/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = kord/main.m; sourceTree = "<group>"; };
-		1A07DB2FCDAA35B3DA3EB48B /* Pods-kord-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kord-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-kord-tvOSTests/Pods-kord-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* kord-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kord-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* kord-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kord-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		368A3A96E9608BB3FA31BBFB /* libPods-kordTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kordTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B7C8165F4CBB2D228C7C2C /* Pods-kord-kordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kord-kordTests.debug.xcconfig"; path = "Target Support Files/Pods-kord-kordTests/Pods-kord-kordTests.debug.xcconfig"; sourceTree = "<group>"; };
 		39BFB3A6C72E6BCBC1278F65 /* libPods-kord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B602FD0F1788DCE2E4E20C3 /* Pods-kord-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kord-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-kord-tvOSTests/Pods-kord-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CFC3B14050576BF07CCAC55 /* Pods-kordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kordTests.debug.xcconfig"; path = "Target Support Files/Pods-kordTests/Pods-kordTests.debug.xcconfig"; sourceTree = "<group>"; };
 		76B7BB3FF60AF52B1DB075EA /* Pods-kord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kord.debug.xcconfig"; path = "Target Support Files/Pods-kord/Pods-kord.debug.xcconfig"; sourceTree = "<group>"; };
 		8BD3DE169474DEFDC6802DA5 /* Pods-kordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kordTests.release.xcconfig"; path = "Target Support Files/Pods-kordTests/Pods-kordTests.release.xcconfig"; sourceTree = "<group>"; };
-		B3D5DD4F5E7E3B280A118527 /* Pods-kord-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kord-tvOS.release.xcconfig"; path = "Target Support Files/Pods-kord-tvOS/Pods-kord-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		B9D335D10FCDDB4AB24A80D0 /* libPods-kord-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kord-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C802813E23E8501E00E7B0E8 /* gs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gs.mp3; path = ../../../Music/chords/gs.mp3; sourceTree = "<group>"; };
 		C802813F23E8501F00E7B0E8 /* g_b.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = g_b.mp3; path = ../../../Music/chords/g_b.mp3; sourceTree = "<group>"; };
 		C802814023E8501F00E7B0E8 /* ds_g.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ds_g.mp3; path = ../../../Music/chords/ds_g.mp3; sourceTree = "<group>"; };
@@ -136,10 +130,10 @@
 		C802816023E8502000E7B0E8 /* cs_f.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cs_f.mp3; path = ../../../Music/chords/cs_f.mp3; sourceTree = "<group>"; };
 		C802816123E8502000E7B0E8 /* fs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fs.mp3; path = ../../../Music/chords/fs.mp3; sourceTree = "<group>"; };
 		C8707DA1243EBF1D00DACA8C /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		DCDC5FDC029773F6F4C60C95 /* libPods-kord-kordTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kord-kordTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		ED34FFA7970B94BB12F1785D /* Pods-kord-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kord-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-kord-tvOS/Pods-kord-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		FF74FE3BECF8EB19EF43CBD2 /* libPods-kord-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kord-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5F5548DF49E4B9AC075C80 /* Pods-kord-kordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kord-kordTests.release.xcconfig"; path = "Target Support Files/Pods-kord-kordTests/Pods-kord-kordTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DAD1C30A6F32069BA905768 /* libPods-kordTests.a in Frameworks */,
+				859F6439BD4D215C90397FA4 /* libPods-kord-kordTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +157,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41494D25E873D62F20DD4F85 /* libPods-kord-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +164,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4497718B1F8BAFCD4A371B5 /* libPods-kord-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,9 +214,7 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				39BFB3A6C72E6BCBC1278F65 /* libPods-kord.a */,
-				B9D335D10FCDDB4AB24A80D0 /* libPods-kord-tvOS.a */,
-				FF74FE3BECF8EB19EF43CBD2 /* libPods-kord-tvOSTests.a */,
-				368A3A96E9608BB3FA31BBFB /* libPods-kordTests.a */,
+				DCDC5FDC029773F6F4C60C95 /* libPods-kord-kordTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,12 +224,10 @@
 			children = (
 				76B7BB3FF60AF52B1DB075EA /* Pods-kord.debug.xcconfig */,
 				0B2B5DF84F9B335411BE9740 /* Pods-kord.release.xcconfig */,
-				ED34FFA7970B94BB12F1785D /* Pods-kord-tvOS.debug.xcconfig */,
-				B3D5DD4F5E7E3B280A118527 /* Pods-kord-tvOS.release.xcconfig */,
-				4B602FD0F1788DCE2E4E20C3 /* Pods-kord-tvOSTests.debug.xcconfig */,
-				1A07DB2FCDAA35B3DA3EB48B /* Pods-kord-tvOSTests.release.xcconfig */,
 				4CFC3B14050576BF07CCAC55 /* Pods-kordTests.debug.xcconfig */,
 				8BD3DE169474DEFDC6802DA5 /* Pods-kordTests.release.xcconfig */,
+				32B7C8165F4CBB2D228C7C2C /* Pods-kord-kordTests.debug.xcconfig */,
+				ED5F5548DF49E4B9AC075C80 /* Pods-kord-kordTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -326,6 +314,7 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				BFC6DC28378B2533BAA64A99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,7 +351,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "kord-tvOS" */;
 			buildPhases = (
-				01B989EDBEBB342DD603C4FB /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -382,7 +370,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "kord-tvOSTests" */;
 			buildPhases = (
-				7848B57AF1D4311B2D786BEB /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -528,28 +515,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		01B989EDBEBB342DD603C4FB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-kord-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		09A509380AAFCAF43F693FD0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -573,6 +538,7 @@
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -592,6 +558,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -627,33 +594,61 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-kordTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-kord-kordTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7848B57AF1D4311B2D786BEB /* [CP] Check Pods Manifest.lock */ = {
+		BFC6DC28378B2533BAA64A99 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-kord-kordTests/Pods-kord-kordTests-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-kord-tvOSTests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kord-kordTests/Pods-kord-kordTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E61F94EF8BAC884EC2457913 /* [CP] Check Pods Manifest.lock */ = {
@@ -783,7 +778,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CFC3B14050576BF07CCAC55 /* Pods-kordTests.debug.xcconfig */;
+			baseConfigurationReference = 32B7C8165F4CBB2D228C7C2C /* Pods-kord-kordTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -806,7 +801,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BD3DE169474DEFDC6802DA5 /* Pods-kordTests.release.xcconfig */;
+			baseConfigurationReference = ED5F5548DF49E4B9AC075C80 /* Pods-kord-kordTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -831,6 +826,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = kord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -850,6 +846,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = kord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -865,7 +862,6 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED34FFA7970B94BB12F1785D /* Pods-kord-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -893,7 +889,6 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3D5DD4F5E7E3B280A118527 /* Pods-kord-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -921,7 +916,6 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B602FD0F1788DCE2E4E20C3 /* Pods-kord-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -948,7 +942,6 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A07DB2FCDAA35B3DA3EB48B /* Pods-kord-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1004,6 +997,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1057,6 +1051,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
