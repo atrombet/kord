@@ -1,24 +1,25 @@
-import {useState} from 'react';
-import {KEY_MAP} from '../constants';
+import { useState } from 'react';
+import { KEYS } from '../constants';
+import { Key, AppState } from '../interfaces';
 
-const useAppState = () => {
+export const useAppState = (): AppState => {
   /**
    * Whether chords should be displayed as Numbers or Chord names.
    * Defaults to True = display as numbers
    */
-  const [numbers, setNumbers] = useState(true);
+  const [numbers, setNumbers] = useState<boolean>(true);
 
   /**
    * Indicates the user's selected key.
    * Defaults to 'C'
    */
-  const [selectedKey, setSelectedKey] = useState(KEY_MAP.get('c'));
+  const [selectedKey, setSelectedKey] = useState<Key>(KEYS.c);
 
   /**
    * Whether the key picker is visible on screen.
    * Defaults to false.
    */
-  const [pickerVisible, setPickerVisible] = useState(false);
+  const [pickerVisible, setPickerVisible] = useState<boolean>(false);
 
   return {
     numbers,
@@ -26,8 +27,6 @@ const useAppState = () => {
     selectedKey,
     setSelectedKey,
     pickerVisible,
-    setPickerVisible,
+    setPickerVisible
   };
 };
-
-export default useAppState;

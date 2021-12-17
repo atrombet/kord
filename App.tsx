@@ -7,38 +7,26 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
+import { SafeAreaView, StatusBar } from 'react-native';
 import styles from './styles/styles';
-import {
-  ChordLayout,
-  KeyPicker,
-  NumberNameSwitch,
-  HeaderBar,
-} from './components';
-import useAppState from './state/AppState';
-import {KEY_MAP} from './constants';
+import { ChordLayout, KeyPicker, NumberNameSwitch, HeaderBar } from './components';
+import { useAppState } from './state/AppState';
+import { KEYS } from './constants';
 import LinearGradient from 'react-native-linear-gradient';
 
-const App: () => React$Node = () => {
+const App: React.FC = () => {
   // Setup state
-  const {
-    numbers,
-    setNumbers,
-    selectedKey,
-    setSelectedKey,
-    pickerVisible,
-    setPickerVisible,
-  } = useAppState();
+  const { numbers, setNumbers, selectedKey, setSelectedKey, pickerVisible, setPickerVisible } = useAppState();
   // Create array of key values to populate picker.
-  const keys = Array.from(KEY_MAP.values());
+  const keys = Object.values(KEYS);
 
   // Define functions that update state
-  const updateNumbers = value => {
+  const updateNumbers = (value: boolean) => {
     setNumbers(value);
   };
-  const updateKey = value => {
+  const updateKey = (value: string) => {
     setPickerVisible(false);
-    setSelectedKey(KEY_MAP.get(value));
+    setSelectedKey(KEYS[value]);
   };
   const showPicker = () => {
     setPickerVisible(true);
@@ -49,9 +37,9 @@ const App: () => React$Node = () => {
     <LinearGradient
       useAngle={true}
       angle={45}
-      angleCenter={{x: 0.5, y: 0.5}}
+      angleCenter={{ x: 0.5, y: 0.5 }}
       colors={['#072a62', '#0c4546']}
-      style={{height: '100%'}}>
+      style={{ height: '100%' }}>
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={styles.container}>
         <HeaderBar />
