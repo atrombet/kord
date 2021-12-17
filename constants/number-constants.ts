@@ -1,4 +1,4 @@
-export const NUMBER_MAP = {
+export const NUMBER_MAP: { [key: string]: string } = {
   one: '1',
   two: '2-',
   three: '3-',
@@ -6,5 +6,5 @@ export const NUMBER_MAP = {
   four: '4',
   five: '5',
   six: '6-',
-  five_seven: '5/7',
+  five_seven: '5/7'
 };

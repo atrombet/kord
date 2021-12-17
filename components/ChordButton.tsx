@@ -1,8 +1,16 @@
 import React from 'react';
-import {TouchableOpacity, Text} from 'react-native';
+import { TouchableOpacity, Text } from 'react-native';
+import { Chord } from '../interfaces';
 import styles from '../styles/styles';
 
-const ChordButton = ({numbers, chord, playSound, size}) => {
+interface ChordButtonProps {
+  numbers: boolean;
+  chord: Chord;
+  playSound: () => void;
+  size?: string;
+}
+
+export const ChordButton: React.FC<ChordButtonProps> = ({ numbers, chord, playSound, size }) => {
   let buttonStyle, containerStyle;
   switch (size) {
     case 'large':
@@ -24,5 +32,3 @@ const ChordButton = ({numbers, chord, playSound, size}) => {
     </TouchableOpacity>
   );
 };
-
-export default ChordButton;
