@@ -7,14 +7,13 @@
  */
 
 import React from 'react';
-import { SafeAreaView, StatusBar } from 'react-native';
-import styles from './styles/styles';
+import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
 import { ChordLayout, KeyPicker, NumberNameSwitch, HeaderBar } from './components';
 import { useAppState } from './state/AppState';
 import { KEYS } from './constants';
 import LinearGradient from 'react-native-linear-gradient';
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
   // Setup state
   const { numbers, setNumbers, selectedKey, setSelectedKey, pickerVisible, setPickerVisible } = useAppState();
   // Create array of key values to populate picker.
@@ -39,9 +38,9 @@ const App: React.FC = () => {
       angle={45}
       angleCenter={{ x: 0.5, y: 0.5 }}
       colors={['#072a62', '#0c4546']}
-      style={{ height: '100%' }}>
+      style={styles.app__gradient}>
       <StatusBar barStyle="light-content" />
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={styles.app__container}>
         <HeaderBar />
         <ChordLayout selectedKey={selectedKey} numbers={numbers} />
         <NumberNameSwitch numbers={numbers} onValueChange={updateNumbers} />
@@ -57,4 +56,14 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+const styles = StyleSheet.create({
+  app__gradient: {
+    height: '100%'
+  },
+  app__container: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  }
+});

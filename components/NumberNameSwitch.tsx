@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Switch, Text } from 'react-native';
-import styles from '../styles/styles';
+import { View, Switch, Text, StyleSheet } from 'react-native';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 interface NameNumberSwitchProps {
   numbers: any;
@@ -10,9 +10,28 @@ interface NameNumberSwitchProps {
 export const NumberNameSwitch: React.FC<NameNumberSwitchProps> = ({ numbers, onValueChange }) => {
   return (
     <View style={styles.numberNameSwitch}>
-      <Text style={{ ...styles.numberNameSwitchText, textAlign: 'right' }}>Names</Text>
+      <Text style={styles.numberNameSwitch__names}>Names</Text>
       <Switch value={numbers} onValueChange={onValueChange} />
-      <Text style={styles.numberNameSwitchText}>Numbers</Text>
+      <Text style={styles.numberNameSwitch__numbers}>Numbers</Text>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  numberNameSwitch: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  numberNameSwitch__numbers: {
+    color: Colors.white,
+    padding: 16,
+    width: 100
+  },
+  numberNameSwitch__names: {
+    color: Colors.white,
+    padding: 16,
+    width: 100,
+    textAlign: 'right'
+  }
+});
