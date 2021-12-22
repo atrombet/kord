@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Platform } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import { Key } from '../interfaces';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
@@ -19,25 +19,39 @@ export const KeyPicker: React.FC<KeyPickerProps> = ({
   pickerVisible,
   showPicker
 }) => {
+  const iosPicker = pickerVisible ? (
+    <Picker
+      style={styles.keyPicker__iOS}
+      selectedValue={selectedKey.id}
+      onValueChange={onValueChange}
+      itemStyle={styles.keyPicker__item__iOS}>
+      {keys.map(({ id, display }) => {
+        return <Picker.Item label={display} value={id} key={id} color="white" />;
+      })}
+    </Picker>
+  ) : (
+    <Text style={styles.keyPicker__selectedKey} onPress={showPicker}>
+      {selectedKey.display}
+    </Text>
+  );
+
+  const androidPicker = (
+    <Picker
+      style={styles.keyPicker__android}
+      selectedValue={selectedKey.id}
+      onValueChange={onValueChange}
+      mode="dropdown"
+      dropdownIconColor="white">
+      {keys.map(({ id, display }) => {
+        return <Picker.Item label={display} value={id} key={id} />;
+      })}
+    </Picker>
+  );
+
   return (
     <View style={styles.keyPicker__container}>
       <Text style={styles.keyPicker__text}>Select a key: </Text>
-      {pickerVisible ? (
-        <Picker
-          style={styles.keyPicker}
-          selectedValue={selectedKey.id}
-          onValueChange={onValueChange}
-          mode="dropdown"
-          itemStyle={styles.keyPicker__item}>
-          {keys.map(({ id, display }) => {
-            return <Picker.Item label={display} value={id} key={id} color="white" />;
-          })}
-        </Picker>
-      ) : (
-        <Text style={styles.keyPicker__selectedKey} onPress={showPicker}>
-          {selectedKey.display}
-        </Text>
-      )}
+      {Platform.OS === 'ios' ? iosPicker : androidPicker}
     </View>
   );
 };
@@ -50,10 +64,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     color: Colors.white
   },
-  keyPicker: {
+  keyPicker__iOS: {
     width: 100
   },
-  keyPicker__item: {
+  keyPicker__android: {
+    width: 120,
+    color: Colors.white
+  },
+  keyPicker__item__iOS: {
     width: 100,
     textAlign: 'center'
   },
