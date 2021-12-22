@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
+import { SafeAreaView, StatusBar, StyleSheet, Platform } from 'react-native';
 import { ChordLayout, KeyPicker, NumberNameSwitch, HeaderBar } from './components';
 import { useAppState } from './state/AppState';
 import { KEYS } from './constants';
@@ -39,7 +39,11 @@ export const App: React.FC = () => {
       angleCenter={{ x: 0.5, y: 0.5 }}
       colors={['#072a62', '#0c4546']}
       style={styles.app__gradient}>
-      <StatusBar barStyle="light-content" />
+      {Platform.OS === 'ios' ? (
+        <StatusBar barStyle="light-content" />
+      ) : (
+        <StatusBar backgroundColor="transparent" translucent />
+      )}
       <SafeAreaView style={styles.app__container}>
         <HeaderBar />
         <ChordLayout selectedKey={selectedKey} numbers={numbers} />
@@ -58,7 +62,8 @@ export const App: React.FC = () => {
 
 const styles = StyleSheet.create({
   app__gradient: {
-    height: '100%'
+    height: '100%',
+    paddingTop: Platform.OS === 'ios' ? 0 : 40
   },
   app__container: {
     flex: 1,
