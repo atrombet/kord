@@ -6,14 +6,20 @@
  * @flow
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { SafeAreaView, StatusBar, StyleSheet, Platform } from 'react-native';
 import { ChordLayout, KeyPicker, NumberNameSwitch, HeaderBar } from './components';
 import { useAppState } from './state/AppState';
 import { KEYS } from './constants';
 import LinearGradient from 'react-native-linear-gradient';
+import SplashScreen from 'react-native-splash-screen';
 
 export const App: React.FC = () => {
+  //Hide Splash screen on app load.
+  useEffect(() => {
+    SplashScreen.hide();
+  });
+
   // Setup state
   const { numbers, setNumbers, selectedKey, setSelectedKey, pickerVisible, setPickerVisible } = useAppState();
   // Create array of key values to populate picker.
