@@ -9,13 +9,21 @@
 
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
+#if RCT_DEV
+#import <React/RCTDevLoadingView.h>
+#endif
 #import <React/RCTRootView.h>
+// Import RNSplashScreen
+#import "RNSplashScreen.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
+  #if RCT_DEV
+  [bridge moduleForClass:[RCTDevLoadingView class]];
+  #endif
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"kord"
                                             initialProperties:nil];
@@ -27,6 +35,8 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  // Set the splash screen to show by default.
+  [RNSplashScreen show];
   return YES;
 }
 
