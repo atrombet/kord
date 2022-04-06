@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
   numberNameSwitch: {
     flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    height: '10%'
   },
   numberNameSwitch__numbers: {
     color: Colors.white,

@@ -58,7 +58,7 @@ export const KeyPicker: React.FC<KeyPickerProps> = ({
 
 const styles = StyleSheet.create({
   keyPicker__container: {
-    height: 216,
+    height: '20%',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',

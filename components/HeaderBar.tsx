@@ -21,7 +21,7 @@ export const HeaderBar: React.FC = () => {
 const styles = StyleSheet.create({
   headerBar: {
     width: '100%',
-    height: 64,
+    height: '10%',
     paddingLeft: 24,
     paddingRight: 24,
     flexDirection: 'row',

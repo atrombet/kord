@@ -82,7 +82,8 @@ export const ChordLayout: React.FC<ChordLayoutProps> = ({ selectedKey, numbers }
 
 const styles = StyleSheet.create({
   chordGrid: {
-    alignItems: 'center'
+    alignItems: 'center',
+    height: '60%'
   },
   chordGrid__centerColumn: {
     marginHorizontal: 20
