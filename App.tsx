@@ -48,7 +48,7 @@ export const App: React.FC = () => {
       {Platform.OS === 'ios' ? (
         <StatusBar barStyle="light-content" />
       ) : (
-        <StatusBar backgroundColor="transparent" translucent />
+        <StatusBar backgroundColor="transparent" translucent={true} />
       )}
       <SafeAreaView style={styles.app__container}>
         <HeaderBar />
