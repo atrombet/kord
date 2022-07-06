@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export const HeaderBar: React.FC = () => {
   const goToResources = () => {
-    Linking.openURL('http://kordmusicapp.com/resources');
+    Linking.openURL('https://kordmusic.app');
   };
 
   return (
