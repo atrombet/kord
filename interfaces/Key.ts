@@ -1,7 +1,7 @@
-import { Chord } from '.';
+import { Chords } from '.';
 
 export interface Key {
   id: string;
   display: string;
-  chords: { [key: string]: Chord };
+  chords: Chords;
 }

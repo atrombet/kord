@@ -1,6 +1,6 @@
-import { Chord } from '../interfaces';
+import { Chords } from '../interfaces';
 
-export const CHORDS: { [key: string]: Chord } = {
+export const CHORDS: Chords = {
   C: { name: 'c', display: 'C', filename: 'c.mp3' },
   Cm: { name: 'cm', display: 'Cm', filename: 'cm.mp3' },
   C_E: { name: 'c_e', display: 'C/E', filename: 'c_e.mp3' },

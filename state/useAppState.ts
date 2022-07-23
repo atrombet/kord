@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { KEYS } from '../constants';
-import { Key, AppState } from '../interfaces';
+import { Key, AppState, Chords } from '../interfaces';
+import { reduceKeyToChords } from '../helpers';
 
 export const useAppState = (): AppState => {
   /**
@@ -21,12 +22,19 @@ export const useAppState = (): AppState => {
    */
   const [pickerVisible, setPickerVisible] = useState<boolean>(false);
 
+  /**
+   * Holds the chords and their sounds to play for the selected key.
+   */
+  const [chords, setChords] = useState<Chords>(reduceKeyToChords(selectedKey));
+
   return {
     numbers,
     setNumbers,
     selectedKey,
     setSelectedKey,
     pickerVisible,
-    setPickerVisible
+    setPickerVisible,
+    chords,
+    setChords
   };
 };
