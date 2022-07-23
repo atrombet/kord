@@ -1,4 +1,4 @@
-import Sound from 'react-native-sound';
+import Sound from '../plugins/Sound';
 
 export interface Chord {
   number?: string;

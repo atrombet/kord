@@ -9,10 +9,11 @@
 import React, { useEffect } from 'react';
 import { SafeAreaView, StatusBar, StyleSheet, Platform } from 'react-native';
 import { ChordLayout, KeyPicker, NumberNameSwitch, HeaderBar } from './components';
-import { useAppState } from './state/AppState';
+import { useAppState } from './state/useAppState';
 import { KEYS } from './constants';
 import LinearGradient from 'react-native-linear-gradient';
 import SplashScreen from 'react-native-splash-screen';
+import { reduceKeyToChords } from './helpers';
 
 export const App: React.FC = () => {
   //Hide Splash screen on app load.
@@ -21,7 +22,8 @@ export const App: React.FC = () => {
   });
 
   // Setup state
-  const { numbers, setNumbers, selectedKey, setSelectedKey, pickerVisible, setPickerVisible } = useAppState();
+  const { numbers, setNumbers, selectedKey, setSelectedKey, pickerVisible, setPickerVisible, chords, setChords } =
+    useAppState();
   // Create array of key values to populate picker.
   const keys = Object.values(KEYS);
 
@@ -36,6 +38,9 @@ export const App: React.FC = () => {
   const showPicker = () => {
     setPickerVisible(true);
   };
+  useEffect(() => {
+    setChords(reduceKeyToChords(selectedKey));
+  }, [selectedKey, setChords]);
 
   // View
   return (
@@ -52,7 +57,7 @@ export const App: React.FC = () => {
       )}
       <SafeAreaView style={styles.app__container}>
         <HeaderBar />
-        <ChordLayout selectedKey={selectedKey} numbers={numbers} />
+        <ChordLayout chords={chords} numbers={numbers} />
         <NumberNameSwitch numbers={numbers} onValueChange={updateNumbers} />
         <KeyPicker
           selectedKey={selectedKey}

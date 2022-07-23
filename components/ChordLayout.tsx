@@ -1,38 +1,24 @@
 import React, { useState } from 'react';
-import { NUMBER_MAP } from '../constants';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { ChordButton } from './ChordButton';
-import Sound from 'react-native-sound';
-import { Key, Chord } from '../interfaces';
+import Sound from '../plugins/Sound';
+import { Chords } from '../interfaces';
 import { StyleSheet } from 'react-native';
 
 interface ChordLayoutProps {
-  selectedKey: Key;
+  chords: Chords;
   numbers: boolean;
 }
 
-export const ChordLayout: React.FC<ChordLayoutProps> = ({ selectedKey, numbers }) => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const ChordLayout: React.FC<ChordLayoutProps> = ({ chords, numbers }) => {
   const [playing, setPlaying] = useState<Sound | undefined>(undefined);
 
-  const chords: { [key: string]: Chord } = Object.entries(selectedKey.chords).reduce((acc, [num, chord]) => {
-    return {
-      ...acc,
-      [num]: {
-        ...chord,
-        sound: new Sound(chord.filename, Sound.MAIN_BUNDLE),
-        number: NUMBER_MAP[num]
-      }
-    };
-  }, {});
-
   const playChord = (chordId: string) => {
-    setPlaying(currentlyPlaying => {
-      if (currentlyPlaying) {
-        currentlyPlaying.stop();
-      }
-      chords[chordId].sound?.play();
-      return chords[chordId].sound;
+    playing?.stop();
+    setPlaying(() => {
+      const newSound = chords[chordId].sound;
+      newSound?.play();
+      return newSound;
     });
   };
 
